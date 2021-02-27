@@ -15,22 +15,18 @@ int main(){
 	cout << "JOGADOR 02 --> ";
 	cin >> P2;
 	
-	if ((P1 == "PEDRA") && (P2 == "TESOURA")){
+	if ((P1 == "PEDRA") && (P2 == "TESOURA"))
 		cout << "JOGADOR 01 GANHOU.\n";
-		if ((P1 == "PEDRA") && (P2 == "PAPEL")){
-			cout << "JOGADOR 02 GANHOU.\n";
-			if ((P1 == "PAPEL") && (P2 == "TESOURA")){
-				cout << "JOGADOR 02 GANHOU.\n";
-				if ((P1 == "PAPEL") && (P2 == "PEDRA")){
-					cout << "JOGADOR 01 GANHOU.\n";
-					if ((P1 == "TESOURA") && (P2 == "PEDRA")){
-						cout << "JOGADOR 02 GANHOU.\n";
-						if ((P1 == "TESOURA") && (P2 == "PAPEL")){
-							cout << "JOGADOR 01 GANHOU.\n";
-						}
-					}
-				}
-			}
-		}
-	}
+	else if ((P1 == "PEDRA") && (P2 == "PAPEL"))
+		cout << "JOGADOR 02 GANHOU.\n";
+	else if ((P1 == "PAPEL") && (P2 == "TESOURA"))
+		cout << "JOGADOR 02 GANHOU.\n";
+	else if ((P1 == "PAPEL") && (P2 == "PEDRA"))
+		cout << "JOGADOR 01 GANHOU.\n";
+	else if ((P1 == "TESOURA") && (P2 == "PEDRA"))
+		cout << "JOGADOR 02 GANHOU.\n";
+	else if ((P1 == "TESOURA") && (P2 == "PAPEL"))
+		cout << "JOGADOR 01 GANHOU.\n";
+	else 
+		cout << "EMPATE.\n";
 }
